@@ -1,0 +1,22 @@
+{
+  "name": "mcp-game-server",
+  "version": "1.0.0",
+  "description": "MCP Server for game development with Linear integration",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "@linear/sdk": "^26.0.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.1.8",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1"
+  },
+  "author": "",
+  "license": "MIT"
+} 

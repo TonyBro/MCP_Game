@@ -1,0 +1,27 @@
+{
+  "name": "game-dev-mcp",
+  "version": "1.0.0",
+  "description": "MCP Server for game development with Linear integration",
+  "main": "src/index.js",
+  "type": "stdio",
+  "commands": {
+    "start": "node src/index.js"
+  },
+  "tools": [
+    {
+      "name": "create_game_project",
+      "description": "Create a new game project with Linear integration and setup"
+    },
+    {
+      "name": "update_game_knowledge",
+      "description": "Update knowledge about game development best practices and technologies"
+    },
+    {
+      "name": "get_game_templates",
+      "description": "Get available game templates"
+    }
+  ],
+  "requiredEnv": [
+    "LINEAR_API_KEY"
+  ]
+} 
