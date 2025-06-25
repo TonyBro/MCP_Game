@@ -1,41 +1,41 @@
 # MCP Game Development Server
 
-MCP-сервер для автоматизации создания игр с использованием React Three Fiber и интеграцией с Linear для управления проектами.
+MCP server for automating the creation of games using React Three Fiber and integration with Linear for project management.
 
-## Возможности
+## Features
 
-- 🎮 Автоматическое создание игровых проектов
-- 📋 Интеграция с Linear для управления задачами
-- 🚀 Шаблоны для различных типов игр
-- 📱 Mobile-first подход к разработке
-- 🎉 Встроенная поддержка конфетти для празднования побед
-- 🔧 Лучшие практики и современные технологии
+- 🎮 Automatic game project creation
+- 📋 Linear integration for task management
+- 🚀 Templates for various game types
+- 📱 Mobile-first development approach
+- 🎉 Built-in confetti support for celebrations
+- 🔧 Best practices and modern technologies
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий и перейдите в директорию:
+1. Clone the repository and go to the directory:
 ```bash
 cd mcp-game-server
 ```
 
-2. Установите зависимости:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Создайте файл `.env` на основе `env.example`:
+3. Create a `.env` file based on `env.example`:
 ```bash
 cp env.example .env
 ```
 
-4. Добавьте ваш Linear API ключ в `.env`:
+4. Add your Linear API key to `.env`:
 ```
 LINEAR_API_KEY=your_linear_api_key_here
 ```
 
-## Настройка в Cursor
+## Cursor MCP Setup
 
-Добавьте сервер в конфигурацию MCP в Cursor:
+Add the server to your MCP configuration in Cursor:
 
 ```json
 {
@@ -51,9 +51,9 @@ LINEAR_API_KEY=your_linear_api_key_here
 }
 ```
 
-## Использование
+## Usage
 
-### Создание нового игрового проекта
+### Create a new game project
 
 ```
 create_game_project({
@@ -64,7 +64,7 @@ create_game_project({
 })
 ```
 
-### Обновление базы знаний
+### Update knowledge base
 
 ```
 update_game_knowledge({
@@ -72,43 +72,43 @@ update_game_knowledge({
 })
 ```
 
-### Получение доступных шаблонов
+### Get available templates
 
 ```
 get_game_templates()
 ```
 
-## Типы игр
+## Game Types
 
-- **Platformer** - Платформер с физикой и прыжками
-- **Puzzle** - Головоломка с сеткой и комбинациями
-- **Endless Runner** - Бесконечный раннер с препятствиями
-- **Physics-based** - Игра с реалистичной физикой
-- **Arcade** - Классическая аркадная игра
+- **Platformer** - Platformer with physics and jumping
+- **Puzzle** - Grid-based puzzle game with combos
+- **Endless Runner** - Endless runner with obstacles
+- **Physics-based** - Game with realistic physics
+- **Arcade** - Classic arcade game
 
-## Структура проекта
+## Project Structure
 
-Каждый созданный игровой проект включает:
+Each generated game project includes:
 
-- ✅ Три обязательных экрана (Start, Game, Game Over)
-- ✅ Конфетти при завершении игры
-- ✅ Mobile-first дизайн
-- ✅ TypeScript для типобезопасности
-- ✅ Vite для быстрой разработки
-- ✅ TailwindCSS для стилизации
-- ✅ React Three Fiber для 3D графики
-- ✅ Rapier для физики
-- ✅ GSAP для анимаций
+- ✅ Three required screens (Start, Game, Game Over)
+- ✅ Confetti on game completion
+- ✅ Mobile-first design
+- ✅ TypeScript for type safety
+- ✅ Vite for fast development
+- ✅ TailwindCSS for styling
+- ✅ React Three Fiber for 3D graphics
+- ✅ Rapier for physics
+- ✅ GSAP for animations
 
-## Linear интеграция
+## Linear Integration
 
-При создании проекта автоматически создается:
+When creating a project, the following is automatically created:
 
-- Проект в Linear с описанием
-- 3 спринта по неделе каждый
-- Задачи с критериями приемки и тест-кейсами
-- Правильное распределение задач по спринтам
+- A project in Linear with a description
+- 3 sprints, each one week long
+- Tasks with acceptance criteria and test cases
+- Proper distribution of tasks across sprints
 
-## Лицензия
+## License
 
 MIT 

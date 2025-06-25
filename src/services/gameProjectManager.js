@@ -26,7 +26,7 @@ export class GameProjectManager {
       knowledgeSpinner.fail('Failed to update knowledge base');
     }
 
-    // Step 2: Create Linear project structure (через MCP tool call)
+    // Step 2: Create Linear project structure (via MCP tool call)
     const linearSpinner = ora('Creating Linear project...').start();
     let linearProject;
     try {
