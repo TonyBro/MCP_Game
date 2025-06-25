@@ -1,11 +1,11 @@
 # MCP Game Development Server
 
-MCP server for automating the creation of games using React Three Fiber and integration with Linear for project management.
+MCP server for automating the creation of games using React Three Fiber and integration with Linear for project management (via another MCP server).
 
 ## Features
 
 - 🎮 Automatic game project creation
-- 📋 Linear integration for task management
+- 📋 Linear integration for task management (via another MCP server)
 - 🚀 Templates for various game types
 - 📱 Mobile-first development approach
 - 🎉 Built-in confetti support for celebrations
@@ -23,16 +23,6 @@ cd mcp-game-server
 npm install
 ```
 
-3. Create a `.env` file based on `env.example`:
-```bash
-cp env.example .env
-```
-
-4. Add your Linear API key to `.env`:
-```
-LINEAR_API_KEY=your_linear_api_key_here
-```
-
 ## Cursor MCP Setup
 
 Add the server to your MCP configuration in Cursor:
@@ -42,10 +32,7 @@ Add the server to your MCP configuration in Cursor:
   "mcpServers": {
     "game-dev": {
       "command": "node",
-      "args": ["path/to/mcp-game-server/src/index.js"],
-      "env": {
-        "LINEAR_API_KEY": "your_linear_api_key_here"
-      }
+      "args": ["path/to/mcp-game-server/src/index.js"]
     }
   }
 }
@@ -102,7 +89,7 @@ Each generated game project includes:
 
 ## Linear Integration
 
-When creating a project, the following is automatically created:
+When creating a project, the following is automatically created (via another MCP server):
 
 - A project in Linear with a description
 - 3 sprints, each one week long
